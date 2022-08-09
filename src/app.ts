@@ -24,7 +24,7 @@ app.get("/students/random", async (req: Request, res: Response) => {
   if (students.length > 0) {
     const randomStudent = students[Math.floor(Math.random() * students.length)];
     res.send(randomStudent);
-    console.log("só pra mudar o código")
+    console.log("só pra mudar o código, mudei dnv só pra confirmar")
   } else {
     res.send({});
   }
