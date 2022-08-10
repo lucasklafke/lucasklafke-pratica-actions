@@ -11,6 +11,6 @@ jobs:
         with:
           envkey_POSTGRES_URL: ${{secrets.POSTGRES_URL}}
           envkey_POSTGRES_PASSWORD: ${{secrets.POSTGRES_PASSWORD}}
-          file_name: "env.test"
+          file_name: ".env.test"
       - name: Run tests
         run: docker-compose -f docker-compose-test.yml run node_app npm run test
